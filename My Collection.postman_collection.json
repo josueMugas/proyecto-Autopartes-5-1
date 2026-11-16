@@ -1,0 +1,729 @@
+{
+  "info": {
+    "_postman_id": "08076528-7397-4f79-9baf-d0496142777c",
+    "name": "My Collection",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "60215391",
+    "_collection_link": "https://go.postman.co/collection/60215391-08076528-7397-4f79-9baf-d0496142777c?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Usuarios",
+      "item": [
+        {
+          "name": "GET Usuario por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/clientes?id=1",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "clientes"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE Usuario por ID",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/clientes?id=1",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "clientes"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET Usuario",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/clientes?id=1",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "clientes"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST Usuario",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id_usuario\":\"1\",\r\n    \"nombre_usuario\":\"Pep\",\r\n    \"clave\":\"1234\",\r\n    \"activo\":\"1\",\r\n    \"id_rol\":\"1\",\r\n    \"id_cliente \": \"1\"\r\n\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/usuario",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "usuario"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Clientes",
+      "item": [
+        {
+          "name": "GET Clientes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/clientes",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "clientes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET Clientes por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/clientes?id=1",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "clientes"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE Clientes por ID",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/clientes?id=1",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "clientes"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST Cientes",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\":\"Lucio\",\r\n    \"apellido\":\"Rodriguez\",\r\n    \"dni\":\"67676767\",\r\n    \"telefono\":\"1167676767\",\r\n    \"email\":\"luciorodriguez67@gmail.com\",\r\n    \"activo\": \"1\"\r\n\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/clientes",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "clientes"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Insumos",
+      "item": [
+        {
+          "name": "GET  Insumo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/consumo_insumo",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "consumo_insumo"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET Insumo por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/consumo_insumo",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "consumo_insumo"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET Insumo por ID",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/consumo_insumo",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "consumo_insumo"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST Insumo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id_consumo\":\"1\",\r\n    \"id_hoja_ruta\":\"1\",\r\n    \"id_insumo\":\"1\",\r\n    \"cantidad_usada\":\"5\",\r\n    \"fecha_registro\":\"6/7/2026\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/clientes",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "clientes"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Presupuestos",
+      "item": [
+        {
+          "name": "GET Presupuesto por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/presupuesto?id=1",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "presupuesto"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET Presupuesto",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/presupuesto",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "presupuesto"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE Presupuesto por ID",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/clientes?id=1",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "clientes"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST Presupuesto",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id_presupuesto\":\"1\",\r\n    \"id_cliente\":\"1\",\r\n    \"id_usuario_venta\":\"1\",\r\n    \"fecha\":\"6/7/2026\",\r\n    \"total\":\"15000\",\r\n    \"tipo_factura\": \"cualquiercosa\",\r\n    \"es_formal\":\"Si\"\r\n\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/presupuesto",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "presupuesto"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Producto",
+      "item": [
+        {
+          "name": "GET Producto",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/producto",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "producto"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET Producto por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/producto?id=1",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "producto"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE Producto por ID",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/producto?id=1",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "producto"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST Producto",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id_producto\":\"1\",\r\n    \"codigo\":\"PRD-001\",\r\n    \"nombre\":\"Amortiguador Delantero\",\r\n    \"plano_tecnico_url\":\"/planos/amortiguador_del.pdf\",\r\n    \"activo\":\"0\",\r\n    \"precio_venta\": \"0\"\r\n\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/producto",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "producto"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Rol",
+      "item": [
+        {
+          "name": "GET Rol por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/rol",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "rol"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET Rol por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/rol?id=1",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "rol"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE Rol por ID",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/rol?id=1",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "rol"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST Rol",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id_rol\":\"1\",\r\n    \"nombre_rol\":\"VENDEDOR\",\r\n    \"descripcion\":\"Gestión de clientes, presupuestos y ventas\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/rol",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "rol"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Hoja de Ruta",
+      "item": [
+        {
+          "name": "GET Hoja de ruta por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/producto?id=1",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "producto"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE Hoja de ruta por ID",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/producto?id=1",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "producto"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET Hoja de ruta",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/producto",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "producto"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST Hoja de ruta",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id_hoja_ruta\":\"1\",\r\n    \"codigo_inalterable\":\"PRD-001\",\r\n    \"id_presupuesto \":\"1\",\r\n    \"id_producto \":\"1\",\r\n    \"cantidad\":\"1\",\r\n    \"metodo_productivo\": \"0\",\r\n    \"estado\": \"PAGADO\",\r\n    \"fecha_inicio\": \"6/7/2026\",\r\n    \"fecha_estimada_entrega\": \"6/7/2026\"\r\n\r\n\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/proyecto_escuela/presupuesto",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "proyecto_escuela",
+                "presupuesto"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
